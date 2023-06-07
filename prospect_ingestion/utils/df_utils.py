@@ -39,5 +39,4 @@ class DataframeService(JobBase):
             :param file: the list of files to be read in the input directory
             :param delimiter: the delimiter that will be used to parse your file
         """
-        print(schema, file)
         return self.renameColumns(schema, self.read_csv(file, delimiter=delimiter, encoding=encoding))
